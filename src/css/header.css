@@ -42,6 +42,9 @@ header nav .card-img-top{
     width: 2.7rem;
     margin-left: 1em;
 }
+.BotonBuscador:hover{
+background-color: black;
+}
 
 a{
     text-decoration: none;
@@ -51,6 +54,6 @@ a{
     margin-right: 10000px;
 }
 .text-white{
-    background-color: #8C00FF;
+    background-color: #fff;
     color: #fff;
 }

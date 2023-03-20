@@ -22,11 +22,11 @@ export function Buscador() {
         if ( keyword.length === 0) {
            
             swAlert(
-                <h1>el campo no puede estar vacio</h1>
+                <h1 style={{ color: "black"}}>el campo no puede estar vacio</h1>
             );   
         }else if(keyword.length <= 4){
             swAlert(
-                <h1>debe ingresar mas de 4 caracteres</h1>
+                <h1 style={{ color: "black"}}>debe ingresar mas de 4 caracteres</h1>
             );
         }else{
 
@@ -51,9 +51,9 @@ export function Buscador() {
                     <input className="form-control  " type="text" name="keyword" placeholder="escriba una palabra"/>
                 </label>
                     <button 
-                        className="btn btn-primary px-3"  
+                        className="btn btn-primary px-3 BotonBuscador"  
                         type="submit" 
-                        style={{ backgroundColor: "#8C00FF" }} >
+                        style={{ backgroundColor: "#870603"}}>
                             BUSCAR
                     </button>
                     

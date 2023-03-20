@@ -85,12 +85,13 @@ function App() {
     if(!estaLaMovie){
       tempMoviesFavs.push(movieData)
       localStorage.setItem("fav", JSON.stringify(tempMoviesFavs))
-      console.log("estoy pusheando la pelicula")
+      console.log("estoy pusheando la pelicula aqui puedo usar esto")
       setFavoritos(tempMoviesFavs)
       
       
     }
     else{
+      console.log("eliminando peli  ")
       let quitarMovie =tempMoviesFavs.filter(oneMovie => {
         return (oneMovie.id !== movieData.id )
 
@@ -113,7 +114,7 @@ return(
       <Routes>
       
         <Route exact path="/" element={ <Login  />} /> 
-        <Route exact path="/listado" element = {<Listado  className="listado-component" activar={removeOrAdd}/>}/>
+        <Route exact path="/listado" element = {<Listado  className="listado-component" activar={removeOrAdd} favoritos={favoritos}/>}/>
         <Route path="/detalle" element={<Detalle />}/>
         <Route path="/resultados" element={<Resultados />}/> 
         <Route exact path="/favoritos" element={<Favoritos favoritos={favoritos} activar={removeOrAdd}/>}/> 

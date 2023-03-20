@@ -5,7 +5,7 @@ export function Footer() {
     return(
     <footer>
       
-        <p style={{color:"white"}} >Copyright Alkemy Challenge</p>
+        <p style={{color:"white"}} >Daniel Guillen</p>
     </footer>
     )
 

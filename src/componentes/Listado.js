@@ -29,20 +29,20 @@ export function Listado (props){
 
                 //estas comillas del useEffect  
         },[]);
-
-
+    
     return(
         <>
             {!token ? <Navigate to="/"/>:
             <>
 
 
-            
+
                 <div className="row" >
 
             
                     {
                     movieList.map((pelis, i) => {
+                        
                         return ( 
                             <div className="col-3" key={i}>
                             <div className="card my-3 img-fluid"   style={{ width: '15rem' }}  >
@@ -57,11 +57,12 @@ export function Listado (props){
 
                                 />
                                 
-                                <button className="favourite-btn"  
-                                        onClick={props.activar} 
+                                <button className={`favourite-btn ${props.favoritos.some(pelicula => pelicula.id === pelis.id) ? 'favoritos' : ''}`}
+                                        onClick={props.activar}
                                         data-movie = {pelis.id}
                                         data-bs-toggle="tooltip"
                                         title="Agregarlo a Favoritos" 
+                                        
                                        
                                 ><img src={favorito} 
                                 className="img-fluid"
@@ -90,7 +91,7 @@ export function Listado (props){
                             </div>
                         )
                     } )}
-                </div>
+                </div>       
             </>}
         </>
 

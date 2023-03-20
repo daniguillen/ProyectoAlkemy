@@ -58,8 +58,8 @@ export function Header() {
                    
                     {token  && 
                         <li className="nav-item ml-auto">
-                            <button className="btn btn-primary px-3 text-white"
-                                    style={{ backgroundColor: "#8C00FF" }} 
+                            <button className="btn btn-primary px-3 "
+                                    style={{ backgroundColor: "#fff", color:"black" }} 
                                     onClick={salirSesion}>
                             Salir
                             </button>

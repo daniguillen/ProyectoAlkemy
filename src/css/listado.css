@@ -2,13 +2,17 @@
 
     display: flex;
     justify-content: center;
-
     background-color: #370617;
     background-image: linear-gradient(to right, #370617, #870603);
 
+    
+
 
 }
-.row h2, .row em{
+span, h1{
+color: white;
+}
+.row h2,  .row em{
     color: #f2f2f2;
 }
 
@@ -48,7 +52,7 @@
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #8C00FF;
+    background-color: #870603;
     color: #fff;
 
 }
@@ -76,4 +80,12 @@
     box-sizing: border-box;
 
 
+}
+
+.favorito{
+    background-color: #8C00FF;
+}
+
+.favorito:hover{
+    background-color: #870603;
 }

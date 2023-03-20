@@ -15,7 +15,8 @@ console.log(props)
     return(
         <>
             {!token ? <Navigate to="/" />:<>
-                {props.favoritos.length===0?<h3>No tiene ninguno agregado a favoritos</h3>:
+                {props.favoritos.length===0?<h3 
+                style={{color:"white", width:"100%", display:"flex", justifyContent:"center", marginTop:"2rem"}}>No tiene favoritos</h3>:
             
                     <div className="row" >
 
@@ -24,7 +25,7 @@ console.log(props)
                         props.favoritos.map((favoritos, i) => {
                             return ( 
                                 <div className="col-3" key={i}>
-                                    {console.log(favoritos.id)}
+                                    {console.log("estoy en favoritos en id ",favoritos.id)}
                                     <div className="card my-3 img-fluid"   style={{ width: '18rem' }}  >
                                     
                                         <img className="card-img-top img-fluid"
@@ -32,7 +33,7 @@ console.log(props)
                                             alt="Card cap"
                                         />
 
-                                            <button className="favourite-btn"  
+                                            <button className="favourite-btn favorito"  
                                            
                                                     onClick={props.activar} 
                                                     data-movie = {favoritos.id} 

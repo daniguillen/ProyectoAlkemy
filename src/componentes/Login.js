@@ -66,12 +66,16 @@ export function Login(e){
                     <h1>Formulario</h1>
                     <form onSubmit={submitHandler} className="form-group mx-auto">
                         <div className="form-group">
-                            <label ><span>Introduzca su email</span> 
+                            <label ><small>challenge@alkemy.org</small>
+                                <br/>
+                                <span>Introduzca su email </span> 
                             <br/>
                             <input type="text" name="email" placeholder="email" className="form-control"></input>
                             </label>
                             <br/>
                             <label ><span>Introduzca su constraseña</span>
+                            <br/>
+                            <small>react</small>
                             <br/>
                             <input type="password" name="password" autoComplete="current-password" placeholder ="constraseña" className="form-control"/>
                             </label>
